@@ -1,0 +1,156 @@
+*
+{
+    font-size: 11pt;
+    font-family: Arial;
+}
+
+h1
+{
+    font-size: 2em;
+    margin: 0px;
+    font-weight: 100;
+
+}
+
+input
+{
+    padding: 0.5em;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#bar
+{
+    color: white;
+    background: blue;
+}
+
+.mainMargin
+{
+    margin: 0px auto;
+    width: 500px;
+}
+
+#barCon
+{
+    padding: 1em 0em;
+}
+
+#container
+{
+    margin: 20px auto;
+}
+
+.clear
+{
+    clear: float;
+}
+
+.ib
+{
+    /* background: yellow;
+    border: 1px solid blue; */
+    display: inline-block;
+    width: 247px;
+    
+}
+
+.in
+{
+    background: gray;
+    border: 1px solid red;
+    display: inline;
+    height: 50px;
+    width: 200px;
+}
+
+.col-left
+{
+}
+
+.col-right
+{
+    
+}
+
+.hoverMe:hover
+{
+    background: red;
+}
+
+.button
+{
+    text-align: center;
+    line-height: 1.25em;
+    font-family: Arial;
+    border: 1px solid black;
+    border-bottom-width:10px;
+    border-radius: 1em ;/* 3em 0em 0em */
+    background: red;
+    color: white;
+    font-weight: bolder;
+    padding: 1em;
+    margin: 1em auto;
+    width: 200px;
+}
+
+.button:active
+{
+    border-width: 5px 1px 5px;
+    background: rgb(155,0,0);
+}
+
+// HEY! Check out the "transition" property. You can use it to animate transitions!
+
+/*
+.button:hover
+{
+    opacity: 0.75;
+}
+*/
+
+#big
+{
+    width: 500px;
+    height: 500px;
+    background: gray;
+    position: relative;
+    margin: 0px auto;
+}
+
+.small
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#first
+{
+    left: 0;
+    top: 0;
+}
+
+#second
+{
+    right: 0;
+    top: 0;
+    z-index: 50;
+}
+
+#third
+{
+    bottom: 0;
+    left: 0;
+}
+
+#fourth
+{
+    bottom: 0;
+    right: 0;
+}

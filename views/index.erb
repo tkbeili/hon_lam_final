@@ -1,0 +1,92 @@
+<div id="container">
+
+<!--THIS IS LEFT COLUMN-->
+<div class="column">
+	<h2>
+		Rate My Website
+	</h2>
+
+	<form action="/confirm" method="post">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" placeholder="John Doe">
+		<br>
+		<br>
+
+		<label for="name">Email</label>
+		<input type="text" id="email" name="email" placeholder="john@doe.com">
+		<br>
+		<br>
+
+		<label for="design">Design</label>
+		<input type="radio" name="design" value="1">1 (worst)
+		<input type="radio" name="design" value="2">2
+		<input type="radio" name="design" value="3">3
+		<input type="radio" name="design" value="4">4
+		<input type="radio" name="design" value="5">5 (best)
+		<br>
+		<br>
+
+		<label for="content">Content</label>
+		<input type="radio" name="content" value="1">1 (worst)
+		<input type="radio" name="content" value="2">2
+		<input type="radio" name="content" value="3">3
+		<input type="radio" name="content" value="4">4
+		<input type="radio" name="content" value="5">5 (best)
+		<br>
+		<br>
+
+		<label for="speed">Speed</label>
+		<input type="radio" name="speed" value="1">1 (worst)
+		<input type="radio" name="speed" value="2">2
+		<input type="radio" name="speed" value="3">3
+		<input type="radio" name="speed" value="4">4
+		<input type="radio" name="speed" value="5">5 (best)
+		<br>
+		<br>
+
+		<label for="overall">Overall</label>
+		<input type="radio" name="overall" value="1">1 (worst)
+		<input type="radio" name="overall" value="2">2
+		<input type="radio" name="overall" value="3">3
+		<input type="radio" name="overall" value="4">4
+		<input type="radio" name="overall" value="5">5 (best)
+		<br>
+		<br>
+
+		<input type="submit" value="Submit!">
+	</form>
+
+</div>
+
+
+<!--THIS IS RIGHT COLUMN-->
+<div class="column" id="colright">
+	<h2>
+		All our results!
+	</h2>
+	
+	<table>
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Design</th>
+		<th>Content</th>
+		<th>Speed</th>
+		<th>Overall</th>
+
+	</tr>
+	<% @contacts.each do |contact| %>
+	<tr>
+		<td><%= contact.name %></td>
+		<td><%= contact.email %></td>
+		<td><%= contact.design %></td>
+		<td><%= contact.content %></td>
+		<td><%= contact.speed %></td>
+		<td><%= contact.overall %></td>
+	</tr>
+	<% end %>
+	</table>
+</div>
+
+<!--THIS ENDS THE CONTAINER-->
+</div>
